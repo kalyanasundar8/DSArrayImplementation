@@ -1,4 +1,6 @@
+
 public class BasicFields {
+
     // Fields
     public static int initialCapacity = 5;
     public int currentCapacity;
@@ -14,9 +16,8 @@ public class BasicFields {
 
     //  Capacity increment method
     public void increaseCapacity() {
-        currentCapacity *= 2;
-        System.out.println(currentCapacity);
-        java.util.Arrays.copyOf(arrayElement, currentCapacity);
+        currentCapacity *= 2; // Increase the capacity in to 2
+        arrayElement = java.util.Arrays.copyOf(arrayElement, currentCapacity); // Store the copied array element to the existing array element.
     }
 
     // Capacity decrement method

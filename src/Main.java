@@ -30,25 +30,25 @@ public class Main {
             System.out.println("**************************************************");
 
             // Get choice from the user
-            System.out.println("Press any choice from the menu: ");
+            System.out.print("Press any choice from the menu: ");
             int choice = Integer.parseInt(scanner.next());
 
             // This switch will perform the operations based on the user choice
             switch(choice) {
-                case 1: System.out.println("Enter the element you want to add: ");
+                case 1: System.out.print("Enter the element you want to add: ");
                 element = Integer.parseInt(scanner.next());
                 inserting.addElementAtEnd(element);
                 break;
-                case 3: System.out.println("Enter the element you want to add: ");
+                case 3: System.out.print("Enter the element you want to add: ");
                 element = Integer.parseInt(scanner.next());
-                System.out.println("Enter the position you want to add the element: ");
+                System.out.print("Enter the position you want to add the element: ");
                 position = Integer.parseInt(scanner.next());
                 inserting.insertAtSpecifiedPosition(element, position);
                 break;
-                case 11: System.out.println("Array elements: ");
+                case 11: System.out.print("Array elements: ");
                 inserting.displayElements();
                 break;
-                case 0: System.out.println("I think you learned something");
+                case 0: System.out.println("I hope you learned something");
                 System.exit(0);
                 break;
                 default: System.out.println("Please press 1 to 11 for perform some operations (or) press 0 to exit");
