@@ -17,11 +17,11 @@ class Insertion extends BasicFields {
             increaseCapacity();
             System.out.println("Capacity increased now you can add more elements");
         }
-        for (int i = currentArraySize - 1; i >= position; i++) {
+        for (int i = currentArraySize - 1; i >= position; i--) {
             arrayElement[i + 1] = arrayElement[i];
-            currentArraySize++;
         }
         arrayElement[position] = element;
+        currentArraySize++;
         System.out.println("Element " + element + " is successfully added to the " + position + "th position");
     }
 
